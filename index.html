@@ -10,14 +10,12 @@
       --text-color: #2c3e50;
       --heading-color: #2c3e50;
       --link-color: #3498db;
-      --card-bg: #f5f5f5;
     }
     body.dark {
       --bg-color: #121212;
       --text-color: #e0e0e0;
       --heading-color: #ffffff;
       --link-color: #4fc3f7;
-      --card-bg: #1e1e1e;
     }
     body {
       font-family: Arial, sans-serif;
@@ -33,7 +31,13 @@
     a:hover { text-decoration: underline; }
     ul { list-style: square; }
     .contact { margin-top: 10px; }
-    img { border: 3px solid var(--link-color); border-radius: 50%; width: 180px; height: 180px; }
+    img {
+      border: 3px solid var(--link-color);
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      margin-top: 15px;
+    }
     .toggle-btn {
       position: fixed;
       top: 20px;
@@ -48,11 +52,11 @@
     }
   </style>
 </head>
-<body>
-  <button class="toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+<body class="dark">
+  <button class="toggle-btn" onclick="toggleTheme()">☀️ Light Mode</button>
 
   <h1>Hi, I'm Jaleed Ahmad 👋</h1>
-  <img src="https://avatars.githubusercontent.com/u/105865279" alt="Jaleed Ahmad"     style="width:180px; height:180px; border-radius:50%;" />
+  <img src="https://avatars.githubusercontent.com/u/105865279" alt="Jaleed Ahmad" />
 
   <p>
     📍 Faisalabad, Pakistan <br />
