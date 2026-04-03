@@ -26,10 +26,11 @@
       color: var(--text-color);
       transition: all 0.3s ease;
     }
-    h1, h2 { color: var(--heading-color); }
+    h1, h2 { color: var(--heading-color); border-bottom: 2px solid var(--link-color); padding-bottom: 5px;}
     a { color: var(--link-color); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    ul { list-style: square; }
+    ul { list-style: square; margin-top: 10px; }
+    li { margin-bottom: 10px; }
     .contact { margin-top: 10px; }
     img {
       border: 3px solid var(--link-color);
@@ -50,65 +51,97 @@
       cursor: pointer;
       font-size: 14px;
     }
+    .job-title { margin-bottom: 2px; }
+    .job-date { font-size: 0.9em; color: gray; font-style: italic; margin-top: 0; }
   </style>
 </head>
 <body class="dark">
   <button class="toggle-btn" onclick="toggleTheme()">☀️ Light Mode</button>
 
   <h1>Hi, I'm Jaleed Ahmad 👋</h1>
-  <img src="Jaleed.jpeg" alt="Jaleed Ahmad"
-     style="width:180px; height:180px; border-radius:50%;" />
-
+  <img src="Jaleed.jpeg" alt="Jaleed Ahmad" />
 
   <p>
     📍 Faisalabad, Pakistan <br />
-    🎓 BS Electrical Engineering, Namal University (2021–2025) <br />
-    💡 Electrical Engineer | AI/ML & Embedded Systems Enthusiast
+    🎓 BS Electrical Engineering, Namal University, Mianwali <br />
+    💡 AI/ML Engineer | Embedded Systems & IoT Enthusiast
   </p>
 
   <h2>Summary</h2>
   <p>
-    Passionate about Machine Learning, Embedded Systems, and IoT. Skilled in circuit design,
-    programming (Python, C/C++), and system integration using microcontrollers, Arduino, Raspberry Pi,
-    Jetson Nano, and sensors. I enjoy applying deep learning, computer vision, and signal processing
-    to real-world problems.
+    AI/ML Engineer and Electrical Engineering graduate specializing in Deep Learning, NLP, Generative AI, and Embedded Systems. Proven track record of developing end-to-end intelligent systems, from fine-tuning custom neural networks and architecting scalable LLM pipelines to designing IoT-based automation. I combine a strong foundation in model development with expertise in MLOps, AWS cloud infrastructure, and microcontroller integration (Arduino, Raspberry Pi, Jetson Nano) to deliver robust, production-ready AI and hardware solutions.
   </p>
 
-  <h2>Projects</h2>
+  <h2>Skills</h2>
   <ul>
-    <li><b>ASL Recognition using Accelerometers & Deep Learning</b> — Real-time gesture recognition for American Sign Language.</li>
-    <li><b>AI and Real Image Detection</b> — CNN-based system to differentiate real-world images.</li>
-    <li><b>IoT-based Weather Monitoring with LLM API</b> — Raspberry Pi dashboard with AI-powered analysis.</li>
-    <li><b>Remote Control Vehicle</b> — Wireless Arduino car using motor drivers.</li>
-    <li><b>Robotic Car Design</b> — Obstacle-avoiding robotic car programmed with Embedded C.</li>
-    <li><b>DC Motor Speed Control</b> — PWM-based speed control system using microcontrollers.</li>
-    <li><b>Audio Compression System</b> — Microcontroller-based audio compression using DAC circuits.</li>
-    <li><b>Noise Estimation in Images</b> — Statistical noise analysis in digital images.</li>
-    <li><b>Skew Correction of Pages</b> — Document preprocessing with OpenCV.</li>
+    <li><b>Programming Languages:</b> Python, C/C++, Embedded C, Verilog</li>
+    <li><b>ML/DL Frameworks:</b> PyTorch, TensorFlow, Keras, Transformers, Stable Diffusion</li>
+    <li><b>NLP & GenAI:</b> LangChain, Embeddings, Tokenizers, Vector Databases (ChromaDB), LLM APIs (Gemini, Mistral)</li>
+    <li><b>MLOps & Cloud:</b> Linux, Git, GitHub Actions, Docker, Kubernetes, Jenkins, AWS (IAM, ECR, EC2, S3, Lambda, ECS Fargate, DynamoDB), CI/CD</li>
+    <li><b>Embedded Systems & IoT:</b> Arduino, Raspberry Pi, ESP32, Jetson Nano, AVR, Microchip Studio, Flask, Circuit Design, PCB Prototyping</li>
   </ul>
 
   <h2>Work Experience</h2>
   <ul>
-    <li><b>Internee, Electrical Engineering — Interloop Limited</b> (2024) — Plant maintenance and performance monitoring.</li>
-    <li><b>Internee — Kun Techs</b> (2024–2025) — IoT solutions, sensor integration, and remote monitoring.</li>
-    <li><b>Content Writer — NCBS, Namal University</b> (2021–2023) — Communication & outreach material.</li>
+    <li>
+      <h3 class="job-title">Trainee AI/ML Engineer | T8 Launchpad (NASTP Delta)</h3>
+      <p class="job-date">01/2024 – Present | Lahore, Pakistan</p>
+      <ul>
+        <li>Engineered scalable infrastructure for deploying AI/ML and Computer Vision models using AWS ECS Fargate and Docker.</li>
+        <li>Developed and optimized Retrieval-Augmented Generation (RAG) pipelines utilizing LLMs to enhance context-aware enterprise workflows.</li>
+        <li>Managed serverless data processing pipelines leveraging AWS S3, Lambda, and DynamoDB.</li>
+        <li>Orchestrated automated CI/CD pipelines via GitHub Actions and Jenkins.</li>
+      </ul>
+    </li>
+    <li>
+      <h3 class="job-title">NLP Intern | Elevvo</h3>
+      <p class="job-date">09/2025 – 10/2025</p>
+      <ul>
+        <li>Completed an intensive internship focusing on NLP, executing 6 diverse text-processing and machine learning projects.</li>
+        <li>Developed and fine-tuned models using NLTK, spaCy, and Hugging Face Transformers.</li>
+      </ul>
+    </li>
+    <li>
+      <h3 class="job-title">Internee | Kun Techs</h3>
+      <p class="job-date">07/2024 – 10/2025</p>
+      <ul>
+        <li>Worked on IoT technologies and solutions, including sensor integration, data acquisition, and remote monitoring.</li>
+      </ul>
+    </li>
+    <li>
+      <h3 class="job-title">Internee, Electrical Engineering | Interloop Limited</h3>
+      <p class="job-date">08/2024 – 09/2024 | Faisalabad, Pakistan</p>
+      <ul>
+        <li>Worked with the maintenance team maintaining and managing plant electricity supply, machines, and equipment.</li>
+      </ul>
+    </li>
   </ul>
 
-  <h2>Skills</h2>
-  <p>
-    <b>Languages/Tools:</b> Python, C/C++, MATLAB, Verilog, Embedded C, Arduino, Raspberry Pi, ESP32, Jetson Nano, Flask, PCB Prototyping <br />
-    <b>Expertise:</b> Deep Learning, Computer Vision, AI/ML Algorithms, Embedded Systems, Circuit Design, IoT Development
-  </p>
+  <h2>Key Projects</h2>
+  <ul>
+    <li><b>AI Study Notes Agent</b> <i>(Python, Gemini 2.5 Flash, RAG, ChromaDB, LangChain, Supabase)</i> — Architected a multi-user AI study assistant with real-time document analysis, semantic search, and automated GenAnki flashcard generation backed by PostgreSQL/OAuth 2.0.</li>
+    <li><b>AI Image Forensics Web Application</b> <i>(Python, FastAPI, React, Gemini Vision API)</i> — Developed an end-to-end full-stack application to detect AI-generated and manipulated images using multimodal vision models.</li>
+    <li><b>ASL Recognition using Deep Learning & Accelerometers</b> <i>(Python, PyTorch, Jetson Nano, Sensors)</i> — Designed a real-time American Sign Language recognition system using MPU6050 sensors, custom LSTM/CNN architectures, and deployed for low-latency edge inference on a Jetson Nano.</li>
+    <li><b>AuraBeat: Context-Aware Music Recommendation</b> <i>(Node.js, Google Gemini API, Open-Meteo API)</i> — Built an intelligent web app providing music recommendations based on user mood, live weather, and location via an AI conversational interface.</li>
+    <li><b>IoT-based Weather Monitoring</b> <i>(Raspberry Pi, Flask, Sensors)</i> — Developed a web dashboard to monitor temperature, humidity, and motion in real-time.</li>
+    <li><b>Robotics & Hardware Systems:</b> Built a wireless Remote Control Vehicle (Arduino), an obstacle-avoiding Robotic Car (Embedded C), and a PWM-based DC Motor Speed Control system.</li>
+    <li><b>Audio Compression System:</b> Developed a basic system for audio signal compression using microcontrollers and DAC circuits.</li>
+  </ul>
 
   <h2>Certificates</h2>
   <ul>
-    <li>Programming in Python – Coursera</li>
-    <li>AI For Everyone – Andrew Ng, Coursera</li>
-    <li>Namal Tech Expo 2024 – Robotics Competition</li>
+    <li>Oracle Cloud Infrastructure AI Foundations Associate (2025)</li>
+    <li>LangChain for LLM Application Development (2025)</li>
+    <li>Understanding and Applying Text Embeddings (2025)</li>
+    <li>ChatGPT Prompt Engineering for Developers (2025)</li>
+    <li>Getting Started with Mistral (2025)</li>
+    <li>AI For Everyone – Coursera by Andrew Ng (2024)</li>
+    <li>Programming in Python – Coursera (2023–2024)</li>
+    <li>Namal Tech Expo 2024 (Robotics Competition) – Certificate of Participation</li>
   </ul>
 
   <h2>Languages</h2>
-  <p>Urdu (Native/Bilingual), English (Professional)</p>
+  <p><b>Urdu:</b> Native/Bilingual Proficiency | <b>English:</b> Professional Working Proficiency</p>
 
   <h2>Contact</h2>
   <p class="contact">
