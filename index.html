@@ -1,166 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaleed Ahmad | Portfolio</title>
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #2c3e50;
-      --heading-color: #2c3e50;
-      --link-color: #3498db;
-    }
-    body.dark {
-      --bg-color: #121212;
-      --text-color: #e0e0e0;
-      --heading-color: #ffffff;
-      --link-color: #4fc3f7;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px auto;
-      max-width: 900px;
-      line-height: 1.6;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      transition: all 0.3s ease;
-    }
-    h1, h2 { color: var(--heading-color); border-bottom: 2px solid var(--link-color); padding-bottom: 5px;}
-    a { color: var(--link-color); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { list-style: square; margin-top: 10px; }
-    li { margin-bottom: 10px; }
-    .contact { margin-top: 10px; }
-    img {
-      border: 3px solid var(--link-color);
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-      margin-top: 15px;
-    }
-    .toggle-btn {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      padding: 8px 16px;
-      background: var(--link-color);
-      color: white;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    .job-title { margin-bottom: 2px; }
-    .job-date { font-size: 0.9em; color: gray; font-style: italic; margin-top: 0; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaleed Ahmad | AI/ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="dark">
-  <button class="toggle-btn" onclick="toggleTheme()">☀️ Light Mode</button>
+<body>
 
-  <h1>Hi, I'm Jaleed Ahmad 👋</h1>
-  <img src="Jaleed_photo.png" alt="Jaleed Ahmad" />
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">JA</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <p>
-    📍 Faisalabad, Pakistan <br />
-    🎓 BS Electrical Engineering, Namal University, Mianwali <br />
-    💡 AI/ML Engineer | Embedded Systems & IoT Enthusiast
-  </p>
+    <header class="hero">
+        <div class="hero-content container">
+            <h1 class="reveal">Jaleed <span class="gradient-text">Ahmad</span></h1>
+            <p class="reveal">AI/ML Engineer & Electrical Engineer specializing in Bridging Hardware Intelligence with Scalable AI Systems.</p>
+            <div class="btn-group reveal">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="resume.pdf" class="btn btn-secondary" download><i class="fas fa-file-download"></i> Download CV</a>
+            </div>
+        </div>
+    </header>
 
-  <h2>Summary</h2>
-  <p>
-    AI/ML Engineer and Electrical Engineering graduate specializing in Deep Learning, NLP, Generative AI, and Embedded Systems. Proven track record of developing end-to-end intelligent systems, from fine-tuning custom neural networks and architecting scalable LLM pipelines to designing IoT-based automation. I combine a strong foundation in model development with expertise in MLOps, AWS cloud infrastructure, and microcontroller integration (Arduino, Raspberry Pi, Jetson Nano) to deliver robust, production-ready AI and hardware solutions.
-  </p>
+    <section id="about" class="container">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <div class="line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Jaleed, an AI/ML Engineer with a background in Electrical Engineering. I thrive at the intersection of algorithm development and real-world deployment.</p>
+                <p>My journey started with sensors and microcontrollers, which eventually led me to the world of Deep Learning and Generative AI. Today, I build end-to-end intelligent systems—from fine-tuning custom models and architecting RAG pipelines to optimizing edge AI for embedded platforms like Jetson Nano.</p>
+                <p>Currently, I am expanding my expertise in <strong>MLOps, AWS Cloud, and Large Language Models</strong> to deliver robust, production-ready AI solutions.</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>AI & ML</h4>
+                        <ul class="skill-list">
+                            <li>Python (PyTorch, TensorFlow)</li>
+                            <li>GenAI (LangChain, Gemini)</li>
+                            <li>Computer Vision (OpenCV)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Cloud & MLOps</h4>
+                        <ul class="skill-list">
+                            <li>AWS (ECS, Lambda, S3)</li>
+                            <li>Docker & Kubernetes</li>
+                            <li>GitHub Actions & CI/CD</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Embedded & IoT</h4>
+                        <ul class="skill-list">
+                            <li>C++ & Embedded C</li>
+                            <li>Jetson Nano & RPi</li>
+                            <li>Circuit Design & PCB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-img-container">
+                <div class="profile-img-wrapper">
+                    <img src="profile.jpg" alt="Jaleed Ahmad">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <h2>Skills</h2>
-  <ul>
-    <li><b>Programming Languages:</b> Python, C/C++, Embedded C, Verilog</li>
-    <li><b>ML/DL Frameworks:</b> PyTorch, TensorFlow, Keras, Transformers, Stable Diffusion</li>
-    <li><b>NLP & GenAI:</b> LangChain, Embeddings, Tokenizers, Vector Databases (ChromaDB), LLM APIs (Gemini, Mistral)</li>
-    <li><b>MLOps & Cloud:</b> Linux, Git, GitHub Actions, Docker, Kubernetes, Jenkins, AWS (IAM, ECR, EC2, S3, Lambda, ECS Fargate, DynamoDB), CI/CD</li>
-    <li><b>Embedded Systems & IoT:</b> Arduino, Raspberry Pi, ESP32, Jetson Nano, AVR, Microchip Studio, Flask, Circuit Design, PCB Prototyping</li>
-  </ul>
+    <section id="experience" class="container">
+        <div class="section-header">
+            <h2>Work Experience</h2>
+            <div class="line"></div>
+        </div>
+        <div class="experience-list">
+            <!-- Experience item 1 -->
+            <div class="experience-item" style="margin-bottom: 3rem;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+                    <h3 style="color: var(--acc-blue);">Trainee AI/ML Engineer</h3>
+                    <span>01/2024 – Present</span>
+                </div>
+                <h4 style="margin-bottom: 1rem; color: var(--text-secondary);">T8 Launchpad (NASTP Delta) | Lahore, Pakistan</h4>
+                <ul class="skill-list">
+                    <li>Engineered scalable infrastructure for deploying CV models using AWS ECS Fargate and Docker.</li>
+                    <li>Developed and optimized RAG pipelines utilizing LLMs to enhance context-aware workflows.</li>
+                    <li>Managed serverless data processing pipelines leveraging AWS S3, Lambda, and DynamoDB.</li>
+                </ul>
+            </div>
+            
+            <!-- Experience item 2 -->
+            <div class="experience-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+                    <h3 style="color: var(--acc-blue);">NLP Intern</h3>
+                    <span>09/2025 – 10/2025</span>
+                </div>
+                <h4 style="margin-bottom: 1rem; color: var(--text-secondary);">Elevvo | Remote</h4>
+                <p style="color: var(--text-secondary);">Completed intensive NLP projects fine-tuning models using NLTK, spaCy, and Hugging Face Transformers.</p>
+            </div>
+        </div>
+    </section>
 
-  <h2>Work Experience</h2>
-  <ul>
-    <li>
-      <h3 class="job-title">Trainee AI/ML Engineer | T8 Launchpad (NASTP Delta)</h3>
-      <p class="job-date">01/2024 – Present | Lahore, Pakistan</p>
-      <ul>
-        <li>Engineered scalable infrastructure for deploying AI/ML and Computer Vision models using AWS ECS Fargate and Docker.</li>
-        <li>Developed and optimized Retrieval-Augmented Generation (RAG) pipelines utilizing LLMs to enhance context-aware enterprise workflows.</li>
-        <li>Managed serverless data processing pipelines leveraging AWS S3, Lambda, and DynamoDB.</li>
-        <li>Orchestrated automated CI/CD pipelines via GitHub Actions and Jenkins.</li>
-      </ul>
-    </li>
-    <li>
-      <h3 class="job-title">NLP Intern | Elevvo</h3>
-      <p class="job-date">09/2025 – 10/2025</p>
-      <ul>
-        <li>Completed an intensive internship focusing on NLP, executing 6 diverse text-processing and machine learning projects.</li>
-        <li>Developed and fine-tuned models using NLTK, spaCy, and Hugging Face Transformers.</li>
-      </ul>
-    </li>
-    <li>
-      <h3 class="job-title">Internee | Kun Techs</h3>
-      <p class="job-date">07/2024 – 10/2025</p>
-      <ul>
-        <li>Worked on IoT technologies and solutions, including sensor integration, data acquisition, and remote monitoring.</li>
-      </ul>
-    </li>
-    <li>
-      <h3 class="job-title">Internee, Electrical Engineering | Interloop Limited</h3>
-      <p class="job-date">08/2024 – 09/2024 | Faisalabad, Pakistan</p>
-      <ul>
-        <li>Worked with the maintenance team maintaining and managing plant electricity supply, machines, and equipment.</li>
-      </ul>
-    </li>
-  </ul>
+    <section id="projects" class="container">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <div class="line"></div>
+        </div>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-brain" style="color: var(--acc-blue);"></i></div>
+                <h3>AI Study Notes Agent</h3>
+                <p>Architected a multi-user AI assistant with real-time document analysis, RAG, and GenAnki flashcard generation.</p>
+                <div class="tags">
+                    <span class="tag">Gemini Flash</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">ChromaDB</span>
+                </div>
+            </div>
 
-  <h2>Key Projects</h2>
-  <ul>
-    <li><b>AI Study Notes Agent</b> <i>(Python, Gemini 2.5 Flash, RAG, ChromaDB, LangChain, Supabase)</i> — Architected a multi-user AI study assistant with real-time document analysis, semantic search, and automated GenAnki flashcard generation backed by PostgreSQL/OAuth 2.0.</li>
-    <li><b>AI Image Forensics Web Application</b> <i>(Python, FastAPI, React, Gemini Vision API)</i> — Developed an end-to-end full-stack application to detect AI-generated and manipulated images using multimodal vision models.</li>
-    <li><b>ASL Recognition using Deep Learning & Accelerometers</b> <i>(Python, PyTorch, Jetson Nano, Sensors)</i> — Designed a real-time American Sign Language recognition system using MPU6050 sensors, custom LSTM/CNN architectures, and deployed for low-latency edge inference on a Jetson Nano.</li>
-    <li><b>AuraBeat: Context-Aware Music Recommendation</b> <i>(Node.js, Google Gemini API, Open-Meteo API)</i> — Built an intelligent web app providing music recommendations based on user mood, live weather, and location via an AI conversational interface.</li>
-    <li><b>IoT-based Weather Monitoring</b> <i>(Raspberry Pi, Flask, Sensors)</i> — Developed a web dashboard to monitor temperature, humidity, and motion in real-time.</li>
-    <li><b>Robotics & Hardware Systems:</b> Built a wireless Remote Control Vehicle (Arduino), an obstacle-avoiding Robotic Car (Embedded C), and a PWM-based DC Motor Speed Control system.</li>
-    <li><b>Audio Compression System:</b> Developed a basic system for audio signal compression using microcontrollers and DAC circuits.</li>
-  </ul>
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-hand-holding-heart" style="color: var(--acc-green);"></i></div>
+                <h3>ASL Recognition on Edge</h3>
+                <p>Designed a real-time American Sign Language recognition system using MPU6050 sensors and Deep Learning on Jetson Nano.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Jetson Nano</span>
+                </div>
+            </div>
 
-  <h2>Certificates</h2>
-  <ul>
-    <li>Oracle Cloud Infrastructure AI Foundations Associate (2025)</li>
-    <li>LangChain for LLM Application Development (2025)</li>
-    <li>Understanding and Applying Text Embeddings (2025)</li>
-    <li>ChatGPT Prompt Engineering for Developers (2025)</li>
-    <li>Getting Started with Mistral (2025)</li>
-    <li>AI For Everyone – Coursera by Andrew Ng (2024)</li>
-    <li>Programming in Python – Coursera (2023–2024)</li>
-    <li>Namal Tech Expo 2024 (Robotics Competition) – Certificate of Participation</li>
-  </ul>
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-search-plus" style="color: var(--acc-blue);"></i></div>
+                <h3>AI Image Forensics</h3>
+                <p>Full-stack app to detect manipulated and AI-generated images using multimodal vision models and FastAPI.</p>
+                <div class="tags">
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Gemini Vision</span>
+                </div>
+            </div>
 
-  <h2>Languages</h2>
-  <p><b>Urdu:</b> Native/Bilingual Proficiency | <b>English:</b> Professional Working Proficiency</p>
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-music" style="color: var(--acc-green);"></i></div>
+                <h3>AuraBeat</h3>
+                <p>Context-aware music recommendation app using mood detector and live weather APIs.</p>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Gemini API</span>
+                    <span class="tag">IoT</span>
+                </div>
+            </div>
 
-  <h2>Contact</h2>
-  <p class="contact">
-    📧 <a href="mailto:jaleedahmad12@gmail.com">jaleedahmad12@gmail.com</a><br />
-    🔗 <a href="https://linkedin.com/in/jaleed-ahmad">LinkedIn</a><br />
-    🐙 <a href="https://github.com/JaleedAhmad">GitHub</a><br />
-    📱 +92 321 1600345
-  </p>
+        </div>
+    </section>
 
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark");
-      const btn = document.querySelector(".toggle-btn");
-      if (document.body.classList.contains("dark")) {
-        btn.textContent = "☀️ Light Mode";
-      } else {
-        btn.textContent = "🌙 Dark Mode";
-      }
-    }
-  </script>
+    <section id="contact" class="container" style="text-align: center;">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <div class="line"></div>
+        </div>
+        <p style="margin-bottom: 2rem; color: var(--text-secondary); max-width: 600px; margin-inline: auto;">I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+        <a href="mailto:jaleedahmad12@gmail.com" class="btn btn-primary">Say Hello</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/JaleedAhmad"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/jaleed-ahmad"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.kaggle.com/jaleedahmad02"><i class="fab fa-kaggle"></i></a>
+            </div>
+            <p>&copy; 2026 Jaleed Ahmad. Designed with Intelligence.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
