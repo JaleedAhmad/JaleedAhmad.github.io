@@ -1,50 +1,71 @@
-# 🌐 Jaleed Ahmad — AI/ML Engineer Portfolio
+<p align="center">
+  <img src="./Cat.gif" width="350" />
+</p>
 
-Welcome to the source code for my personal portfolio website!  
-This site showcases my engineering projects, professional experience, and technical skills across **Generative AI, MLOps, Full-Stack Development, and Cloud-Native Infrastructure**.
+# Jaleed Ahmad
+**AI/ML Engineer | MLOps & Cloud Infrastructure**
 
-🚀 **Live Portfolio:** [jaleedahmad.github.io](https://JaleedAhmad.github.io)
-
----
-
-## 🎨 Design & Architecture
-This portfolio is built from scratch using pure **HTML, CSS, and vanilla JavaScript**. It features a modern, premium "Midnight Tech" aesthetic specifically tailored to reflect cutting-edge AI engineering:
-- **Glassmorphism UI:** Semi-transparent frosted glass elements with subtle borders.
-- **Interactive Neural Canvas:** A dynamic background of connecting nodes that react to mouse movements using the HTML5 Canvas API.
-- **Scroll Reveal Animations:** Intersection Observer-based smooth fade-in animations.
-- **Custom Scroll Progress:** A top-edge dynamic progress bar and sleek custom scrollbars.
-- **Fully Responsive:** Seamlessly adapts from 4K desktop displays down to mobile screens with an interactive hamburger menu.
+[LinkedIn](https://linkedin.com/in/jaleed-ahmad) • [Email](mailto:jaleedahmad12@gmail.com) • [Credly Credentials](https://www.credly.com/users/jaleed-ahmad/skills) • [Faisalabad, Pakistan]
 
 ---
 
-## 🛠️ Technical Stack (Featured in Projects)
-My work spans across the entire AI pipeline, from model architecture to full-stack deployment:
-- **Applied AI & ML:** Python, TensorFlow, OpenCV, Gemini 2.5, Mistral, LangChain, RAG Pipelines, Vector Databases.
-- **Full-Stack & Cloud:** React, Next.js, Node.js, FastAPI, Flask, Streamlit, GCP, Cloud Run, Supabase.
-- **Infrastructure & Mobile:** Docker, Kubernetes, CI/CD, Terraform, GitHub Actions, Android (Kotlin/Java).
+### ⚡ Focus
+AI/ML Engineer with a BS in Electrical Engineering from **Namal University**. I focus on the intersection of **Generative AI** and **Scalable Infrastructure**, specifically operationalizing machine learning workflows (MLOps) and architecting AI-driven applications. Currently integrating cloud services and automating AI pipelines at **T8 Launchpad**.
 
 ---
 
-## 📂 Featured Projects
-The portfolio highlights 10 major projects, including:
-1. **AI Study Notes Agent 📚** — Enterprise RAG assistant with Gemini 2.5 and Supabase.
-2. **TrafficGuard AI 🛡️** — Urban crisis simulation and flash flood detection platform.
-3. **Blizzup Agentic Bike Dealership 🏍️** — Agentic vehicle comparison tool built with Next.js.
-4. **Neural Forensics V6.0 🕵️** — An 8-stage automated pipeline for detecting manipulated digital imagery.
-5. **AuraBeat 🎵** — Emotion and weather-driven music curation platform using Mistral/Gemini.
-6. **Fundus Vessel Segmentation 👁️** — Retinal blood vessel segmentation using Deep Learning and U-Net.
-7. *(And more... Check the live site for all links and source code!)*
+### 🛠 Technical Ecosystem
+
+*   **AI/ML & GenAI:** Vertex AI, Gemini API, RAG Pipelines, Vector Databases (ChromaDB), Prompt Design
+*   **MLOps & Cloud:** GCP (Compute Engine, GKE), AWS (ECS, Lambda, S3), Model Deployment
+*   **Infrastructure & DevOps:** CI/CD (GitHub Actions, Jenkins), Terraform, Docker, Kubernetes
+*   **Monitoring & Observability:** Prometheus, Grafana
+*   **Core Languages:** Python, C++, Bash
 
 ---
 
-## 📬 Contact & Links
-Open to collaborating on groundbreaking AI research and intelligent system development.
+### 🚀 AI & Infrastructure Projects
 
-- 📧 **Email:** [jaleedahmad12@gmail.com](mailto:jaleedahmad12@gmail.com)
-- 🔗 **LinkedIn:** [linkedin.com/in/jaleed-ahmad](https://linkedin.com/in/jaleed-ahmad)
-- 🐙 **GitHub:** [github.com/JaleedAhmad](https://github.com/JaleedAhmad)
-- 📊 **Kaggle:** [kaggle.com/jaleedahmad02](https://www.kaggle.com/jaleedahmad02)
+#### [Neural Forensics Suite](https://github.com/JaleedAhmad/ai-image-forensics-app)
+**Multimodal AI Deployment | Next.js • FastAPI • Gemini Vision**
+*   Built a system to identify AI-generated and manipulated imagery using Gemini Vision models.
+*   Developed a scalable backend architecture to handle multimodal data processing in real-time.
+
+#### [AI Agent & GenAI Workflows](https://github.com/JaleedAhmad)
+**Autonomous Systems | Agent Development Kit (ADK) • Streamlit**
+*   Engineered AI agents for automated task execution using Google Cloud’s ADK.
+*   Designed and deployed conversational interfaces for LLM-driven applications.
+
+#### [DevOps for ML Mastery](https://github.com/JaleedAhmad/DevOps-Training)
+**System Automation | Terraform • Jenkins • Prometheus**
+*   Automated the lifecycle of high-availability infrastructure to support heavy AI workloads.
+*   Implemented automated monitoring and alerting for production-grade ML environments.
 
 ---
 
-💡 *Feel free to fork this repository to use as inspiration for your own portfolio!*
+### 📊 Performance Metrics
+
+<p align="center">
+  <img src="https://github.com/JaleedAhmad/JaleedAhmad/blob/main/github-metrics.svg" height="150" alt="GitHub Metrics" onerror="this.src='https://github-readme-stats-alpha.vercel.app/api?username=JaleedAhmad&show_icons=true&theme=transparent&title_color=00d2ff&icon_color=00ff9f&text_color=a0a0a0&bg_color=00000000&hide_border=true'" />
+  <img src="https://github-readme-stats-alpha.vercel.app/api/top-langs/?username=JaleedAhmad&layout=compact&theme=transparent&title_color=00d2ff&text_color=a0a0a0&bg_color=00000000&hide_border=true" height="150" alt="Top Languages" />
+</p>
+
+---
+
+### 📈 Experience
+*   **Trainee AI/ML & DevOps Engineer** @ T8 Launchpad (Feb 2026 – Present)
+*   **NLP Intern** @ Elevvo (Sep 2025 – Oct 2025)
+*   **IoT Intern** @ Kun Techs (Jul 2024 – Oct 2025)
+
+---
+
+### 🏅 Certifications & Skill Badges
+**Google Cloud Professional Sprint (May 2026)**
+*   ☁️ **Build a Website on Google Cloud** (Infrastructure Modernization)
+*   🤖 **Develop GenAI Apps with Gemini and Streamlit**
+*   🛠️ **Engineer AI Agents with Agent Development Kit (ADK)**
+*   🎯 **Prompt Design in Vertex AI**
+*   ✨ **Explore Generative AI with the Vertex AI Gemini API**
+
+---
+*“Engineering the intelligence layer and the systems that sustain it.”*
