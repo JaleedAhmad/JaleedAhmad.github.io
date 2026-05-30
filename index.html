@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Jaleed Ahmad, an AI/ML Engineer focused on Generative AI, MLOps, and Cloud-Native Infrastructure.">
     <title>Jaleed Ahmad | AI/ML Engineer</title>
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for social icons -->
@@ -10,9 +11,19 @@
 </head>
 <body>
 
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+    
+    <!-- Neural Network Background -->
+    <canvas id="neural-canvas"></canvas>
+
+
     <nav id="navbar">
         <div class="container">
             <a href="#" class="logo">JA</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -29,7 +40,7 @@
             <div class="btn-group reveal">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
                 <a href="https://linkedin.com/in/jaleed-ahmad" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="jaleed's-resume.pdf" class="btn btn-secondary" download><i class="fas fa-file-download"></i> Technical Resume</a>
+                <a href="jaleed-resume.pdf" class="btn btn-secondary" download><i class="fas fa-file-download"></i> Technical Resume</a>
             </div>
         </div>
     </header>
@@ -46,27 +57,27 @@
                 
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h4>Intelligence Architecture</h4>
+                        <h4>Applied AI & ML</h4>
                         <ul class="skill-list">
-                            <li>Python, C++, Bash</li>
-                            <li>Vertex AI, Gemini, Prompt Design</li>
-                            <li>RAG Pipelines & Vector Databases</li>
+                            <li>Python, TensorFlow, OpenCV</li>
+                            <li>Gemini, Mistral, Prompt Design</li>
+                            <li>LangChain, RAG, Vector Databases</li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h4>Cloud & MLOps</h4>
+                        <h4>Full-Stack & Cloud</h4>
                         <ul class="skill-list">
-                            <li>GCP (Compute Engine, GKE)</li>
-                            <li>AWS (ECS, Lambda, S3)</li>
+                            <li>React, Next.js, Node.js</li>
+                            <li>FastAPI, Flask, Streamlit</li>
+                            <li>GCP, Supabase, Cloud Run</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Infrastructure & Mobile</h4>
+                        <ul class="skill-list">
                             <li>Docker, Kubernetes, CI/CD</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Automation</h4>
-                        <ul class="skill-list">
-                            <li>Terraform & Infrastructure as Code</li>
-                            <li>Jenkins & GitHub Actions</li>
-                            <li>Prometheus & Grafana Monitoring</li>
+                            <li>Terraform, GitHub Actions</li>
+                            <li>Android (Kotlin, Java)</li>
                         </ul>
                     </div>
                 </div>
@@ -126,46 +137,188 @@
         <div class="project-grid">
             
             <div class="project-card">
-                <div class="project-icon"><i class="fas fa-search-plus" style="color: var(--acc-blue);"></i></div>
-                <h3>Neural Forensics Suite</h3>
-                <p>A multimodal AI system to identify AI-generated imagery and deepfakes using Gemini Vision models and scalable FastAPI backend.</p>
+                <div class="project-icon"><i class="fas fa-brain" style="color: var(--acc-blue);"></i></div>
+                <h3>AI Study Notes Agent 📚</h3>
+                <ul class="skill-list project-details-list">
+                    <li>Enterprise-grade, multi-user AI Study Assistant</li>
+                    <li>Utilizes Google's Gemini 2.5 Flash and RAG</li>
+                    <li>Features Search Grounding and Supabase integration</li>
+                    <li>Automated design-to-code pipelines via Google Antigravity</li>
+                </ul>
                 <div class="tags">
-                    <span class="tag">Next.js</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">LangChain</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JaleedAhmad/ai-study-notes-agent" target="_blank" title="View Source" aria-label="View Source on GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-shield-alt" style="color: var(--acc-green);"></i></div>
+                <h3>TrafficGuard AI 🛡️</h3>
+                <ul class="skill-list project-details-list">
+                    <li>Advanced, AI-driven urban crisis intelligence platform</li>
+                    <li>Detects and analyzes severe urban mobility disruptions</li>
+                    <li>Simulates and mitigates flash flooding and traffic blockages</li>
+                    <li>Built for Pakistani cities using Google Antigravity</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">React</span>
                     <span class="tag">FastAPI</span>
-                    <span class="tag">Gemini Vision</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JaleedAhmad/hackathon-trafficguard" target="_blank" title="View Source" aria-label="View Source on GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://trafficguard-frontend-289218709697.asia-south1.run.app/" target="_blank" title="Live Demo" aria-label="View Live Project"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-search-plus" style="color: var(--acc-blue);"></i></div>
+                <h3>🕵️ Neural Forensics V6.0</h3>
+                <ul class="skill-list project-details-list">
+                    <li>Premium, agentic AI forensic suite for digital imagery</li>
+                    <li>Detects signs of manipulation, generation, and enhancement</li>
+                    <li>Features an 8-stage automated inspection pipeline</li>
+                    <li>Provides high-confidence verdicts with visual evidence</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Next.js</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JaleedAhmad/ai-image-forensics-app" target="_blank" title="View Source" aria-label="View Source on GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-music" style="color: var(--acc-blue);"></i></div>
+                <h3>AuraBeat 🎵</h3>
+                <ul class="skill-list project-details-list">
+                    <li>Premium, AI-driven music curation platform</li>
+                    <li>Blends real-time sentiment analysis and local weather data</li>
+                    <li>Delivers personalized soundscapes using Gemini AI</li>
+                    <li>Adapts to your exact vibe with dynamic aesthetic changes</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">React</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Gemini</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JaleedAhmad/music-recommender" target="_blank" title="View Source" aria-label="View Source on GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://music-recommender-rust.vercel.app/" target="_blank" title="Live Demo" aria-label="View Live Project"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-cloud-sun" style="color: var(--acc-blue);"></i></div>
+                <h3>Weather & Chat Dashboard 🌦️</h3>
+                <ul class="skill-list project-details-list">
+                    <li>Real-time IoT weather monitoring system for Raspberry Pi</li>
+                    <li>Integrates live DHT11 temperature and humidity sensors</li>
+                    <li>Features an interactive chat interface powered by Mistral AI</li>
+                    <li>Seamlessly blends hardware telemetry and cloud-based reasoning</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JaleedAhmad/weather-chat-dashboard" target="_blank" title="View Source" aria-label="View Source on GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-icon"><i class="fas fa-robot" style="color: var(--acc-blue);"></i></div>
-                <h3>GenAI Agent Systems</h3>
-                <p>Autonomous AI agents engineered with Google Cloud ADK for complex reasoning and automated task execution.</p>
+                <h3>🏍️ Blizzup Agentic Bike Dealership</h3>
+                <ul class="skill-list project-details-list">
+                    <li>Intelligent AI-Driven platform</li>
+                    <li>Focuses on vehicle comparison & inventory management</li>
+                </ul>
                 <div class="tags">
-                    <span class="tag">Vertex AI</span>
-                    <span class="tag">ADK</span>
-                    <span class="tag">Streamlit</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Gemini</span>
+                    <span class="tag">Node.js</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JaleedAhmad/blizzup-fullstack-assessment" target="_blank" title="View Source" aria-label="View Source on GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://blizzup-fullstack-assessment.vercel.app/" target="_blank" title="Live Demo" aria-label="View Live Project"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-icon"><i class="fas fa-microchip" style="color: var(--acc-green);"></i></div>
-                <h3>Automated ML Infrastructure</h3>
-                <p>Infrastructure-as-Code pipeline for high-availability AI services, featuring self-healing and real-time observability.</p>
+                <div class="project-icon"><i class="fas fa-eye" style="color: var(--acc-green);"></i></div>
+                <h3>👁️ Fundus Vessel Segmentation</h3>
+                <ul class="skill-list project-details-list">
+                    <li>Advanced deep learning-based computer vision approach</li>
+                    <li>Segments retinal blood vessels from fundus images</li>
+                    <li>Powered by a specialized U-Net architecture (DRIVE dataset)</li>
+                    <li>Features an intuitive Flask-based web interface for visualization</li>
+                </ul>
                 <div class="tags">
-                    <span class="tag">Terraform</span>
-                    <span class="tag">Kubernetes</span>
-                    <span class="tag">Prometheus</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">TensorFlow</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JaleedAhmad/fundus-vessel-segmentation" target="_blank" title="View Source" aria-label="View Source on GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-icon"><i class="fas fa-brain" style="color: var(--acc-green);"></i></div>
-                <h3>AI Study Notes Agent</h3>
-                <p>Multi-user RAG system with semantic document analysis and automated GenAnki flashcard generation.</p>
+                <div class="project-icon"><i class="fas fa-smile" style="color: var(--acc-green);"></i></div>
+                <h3>🎶 Emotion-Based Music Player</h3>
+                <ul class="skill-list project-details-list">
+                    <li>Interactive application for real-time facial emotion detection</li>
+                    <li>Plays music dynamically matched to your mood</li>
+                    <li>Utilizes a deep learning model for sentiment analysis</li>
+                    <li>Sources music directly from YouTube or Spotify</li>
+                </ul>
                 <div class="tags">
-                    <span class="tag">RAG</span>
-                    <span class="tag">LangChain</span>
-                    <span class="tag">ChromaDB</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">TensorFlow</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JaleedAhmad/EmotionMusicPlayer" target="_blank" title="View Source" aria-label="View Source on GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-camera" style="color: var(--acc-green);"></i></div>
+                <h3>🤖 Robot Vision & Computer Vision Toolkit</h3>
+                <ul class="skill-list project-details-list">
+                    <li>Lightweight and robust collection of Python scripts</li>
+                    <li>Designed for fundamental robot vision tasks</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">OpenCV</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JaleedAhmad/robot-vision-cv" target="_blank" title="View Source" aria-label="View Source on GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-gamepad" style="color: var(--text-primary);"></i></div>
+                <h3>Modern Tic-Tac-Toe Android App</h3>
+                <ul class="skill-list project-details-list">
+                    <li>Premium, feature-rich Tic-Tac-Toe application</li>
+                    <li>Built using modern Android development practices</li>
+                    <li>Showcases a sleek "Midnight Tech" glassmorphism aesthetic</li>
+                    <li>Includes smooth animations and a robust feature set</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Android</span>
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">Java</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JaleedAhmad/tictactoe-app" target="_blank" title="View Source" aria-label="View Source on GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
 
@@ -208,9 +361,9 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/JaleedAhmad"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/jaleed-ahmad"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.kaggle.com/jaleedahmad02"><i class="fab fa-kaggle"></i></a>
+                <a href="https://github.com/JaleedAhmad" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/jaleed-ahmad" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.kaggle.com/jaleedahmad02" aria-label="Kaggle Profile"><i class="fab fa-kaggle"></i></a>
             </div>
             <p>&copy; 2026 Jaleed Ahmad. Innovating at the intersection of AI and Infrastructure.</p>
         </div>

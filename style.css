@@ -244,6 +244,30 @@ nav .container {
     border: 1px solid rgba(0, 210, 255, 0.2);
 }
 
+.project-details-list {
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+
+.project-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.25rem;
+}
+
+.project-links a {
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: var(--acc-blue);
+}
+
 /* --- About & Skills --- */
 
 .about-content {
@@ -356,7 +380,31 @@ footer p {
     font-size: 0.8rem;
 }
 
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+/* --- Hero Animations --- */
+.reveal {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.hero h1.reveal { animation-delay: 0.1s; }
+.hero p.reveal { animation-delay: 0.3s; }
+.hero .btn-group.reveal { animation-delay: 0.5s; }
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 /* --- Responsiveness --- */
+
 
 @media (max-width: 768px) {
     .about-content {
@@ -364,8 +412,28 @@ footer p {
         text-align: center;
     }
     
+    .menu-toggle {
+        display: block;
+    }
+    
     .nav-links {
-        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(5, 5, 5, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--glass-border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Hidden */
+        transition: clip-path 0.4s ease-out;
+    }
+    
+    .nav-links.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Revealed */
     }
     
     .hero h1 {
@@ -375,4 +443,42 @@ footer p {
     .section-header .line {
         display: none;
     }
+}
+
+
+/* --- Scrollbar & Scroll Progress --- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color); 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--glass-border); 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--acc-blue); 
+}
+
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--acc-blue), var(--acc-green));
+    width: 0%;
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+}
+
+/* --- Neural Canvas Background --- */
+#neural-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none; /* Let clicks pass through */
 }

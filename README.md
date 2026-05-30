@@ -1,52 +1,50 @@
-# JaleedAhmad.github.io
-# 🌐 Jaleed Ahmad — Portfolio
+# 🌐 Jaleed Ahmad — AI/ML Engineer Portfolio
 
-Welcome to my personal portfolio website!  
-This site showcases my projects, skills, and experiences in **Electrical Engineering, Embedded Systems, IoT, and AI/ML**.  
+Welcome to the source code for my personal portfolio website!  
+This site showcases my engineering projects, professional experience, and technical skills across **Generative AI, MLOps, Full-Stack Development, and Cloud-Native Infrastructure**.
 
-🚀 Live at: **[jaleedahmad.github.io](https://JaleedAhmad.github.io)**  
-
----
-
-## 📌 About Me
-I'm an **Electrical Engineering student** at Namal University (2021–2025), passionate about:
-- 🔧 Embedded Systems & IoT  
-- 🤖 Machine Learning & Computer Vision  
-- ⚡ Circuit Design & Microcontrollers  
-- 🖥️ Real-world problem solving with AI  
+🚀 **Live Portfolio:** [jaleedahmad.github.io](https://JaleedAhmad.github.io)
 
 ---
 
-## 🛠️ Skills
-- **Languages/Tools:** Python, C/C++, MATLAB, Verilog, Embedded C, Arduino, Raspberry Pi, ESP32, Jetson Nano, Flask  
-- **Expertise:** AI/ML, Deep Learning, Computer Vision, IoT Development, Embedded Systems, PCB Prototyping  
+## 🎨 Design & Architecture
+This portfolio is built from scratch using pure **HTML, CSS, and vanilla JavaScript**. It features a modern, premium "Midnight Tech" aesthetic specifically tailored to reflect cutting-edge AI engineering:
+- **Glassmorphism UI:** Semi-transparent frosted glass elements with subtle borders.
+- **Interactive Neural Canvas:** A dynamic background of connecting nodes that react to mouse movements using the HTML5 Canvas API.
+- **Scroll Reveal Animations:** Intersection Observer-based smooth fade-in animations.
+- **Custom Scroll Progress:** A top-edge dynamic progress bar and sleek custom scrollbars.
+- **Fully Responsive:** Seamlessly adapts from 4K desktop displays down to mobile screens with an interactive hamburger menu.
 
 ---
 
-## 📂 Projects Highlight
-- ✋ **ASL Recognition using Accelerometers & Deep Learning** — Real-time gesture recognition for American Sign Language.  
-- ☁️ **IoT-based Weather Monitoring with LLM API** — Flask dashboard on Raspberry Pi with sensor data and AI analysis.  
-- 🚗 **Robotic Car & Remote Control Vehicle** — Arduino-based obstacle avoidance and wireless car control.  
-- 🖼️ **Image Processing (Noise Estimation, Skew Correction)** — Implemented preprocessing algorithms with OpenCV.  
-- 🎵 **Audio Compression System** — Built a microcontroller-based audio compression system with DAC circuits.  
-
-👉 More projects on my [GitHub profile](https://github.com/JaleedAhmad).  
+## 🛠️ Technical Stack (Featured in Projects)
+My work spans across the entire AI pipeline, from model architecture to full-stack deployment:
+- **Applied AI & ML:** Python, TensorFlow, OpenCV, Gemini 2.5, Mistral, LangChain, RAG Pipelines, Vector Databases.
+- **Full-Stack & Cloud:** React, Next.js, Node.js, FastAPI, Flask, Streamlit, GCP, Cloud Run, Supabase.
+- **Infrastructure & Mobile:** Docker, Kubernetes, CI/CD, Terraform, GitHub Actions, Android (Kotlin/Java).
 
 ---
 
-## 📜 Certificates
-- 🐍 Programming in Python – Coursera  
-- 🤖 AI For Everyone – Andrew Ng, Coursera  
-- 🤖 Namal Tech Expo 2024 (Robotics Competition) – Certificate of Participation  
+## 📂 Featured Projects
+The portfolio highlights 10 major projects, including:
+1. **AI Study Notes Agent 📚** — Enterprise RAG assistant with Gemini 2.5 and Supabase.
+2. **TrafficGuard AI 🛡️** — Urban crisis simulation and flash flood detection platform.
+3. **Blizzup Agentic Bike Dealership 🏍️** — Agentic vehicle comparison tool built with Next.js.
+4. **Neural Forensics V6.0 🕵️** — An 8-stage automated pipeline for detecting manipulated digital imagery.
+5. **AuraBeat 🎵** — Emotion and weather-driven music curation platform using Mistral/Gemini.
+6. **Fundus Vessel Segmentation 👁️** — Retinal blood vessel segmentation using Deep Learning and U-Net.
+7. *(And more... Check the live site for all links and source code!)*
 
 ---
 
-## 📬 Contact
-- 📧 Email: [jaleedahmad12@gmail.com](mailto:jaleedahmad12@gmail.com)  
-- 🔗 LinkedIn: [linkedin.com/in/jaleed-ahmad](https://linkedin.com/in/jaleed-ahmad)  
-- 🐙 GitHub: [github.com/JaleedAhmad](https://github.com/JaleedAhmad)  
+## 📬 Contact & Links
+Open to collaborating on groundbreaking AI research and intelligent system development.
+
+- 📧 **Email:** [jaleedahmad12@gmail.com](mailto:jaleedahmad12@gmail.com)
+- 🔗 **LinkedIn:** [linkedin.com/in/jaleed-ahmad](https://linkedin.com/in/jaleed-ahmad)
+- 🐙 **GitHub:** [github.com/JaleedAhmad](https://github.com/JaleedAhmad)
+- 📊 **Kaggle:** [kaggle.com/jaleedahmad02](https://www.kaggle.com/jaleedahmad02)
 
 ---
 
-💡 This portfolio is built using **HTML + GitHub Pages**.  
-Feel free to fork, explore, and get inspired!
+💡 *Feel free to fork this repository to use as inspiration for your own portfolio!*
