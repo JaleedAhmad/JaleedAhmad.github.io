@@ -190,6 +190,13 @@ nav .container {
 
 /* --- Projects --- */
 
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -348,6 +355,13 @@ nav .container {
 .skill-list li::before {
     content: '▹';
     color: var(--acc-blue);
+}
+
+.skill-note {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+    font-style: italic;
 }
 
 /* --- Footer --- */
