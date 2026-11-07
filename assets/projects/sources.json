@@ -1,0 +1,20 @@
+[
+  {
+    "file": "neural-forensics.webp",
+    "source": "https://github.com/JaleedAhmad/ai-image-forensics-app/blob/main/assets/dashboard.png",
+    "width": 1200,
+    "height": 784
+  },
+  {
+    "file": "study-notes.webp",
+    "source": "https://github.com/JaleedAhmad/ai-study-notes-agent/blob/main/assets/file_upload.png",
+    "width": 1200,
+    "height": 675
+  },
+  {
+    "file": "weather-architecture.webp",
+    "source": "https://github.com/JaleedAhmad/weather-chat-dashboard/blob/main/diagrams/api_structure.png",
+    "width": 600,
+    "height": 900
+  }
+]
