@@ -1,0 +1,46 @@
+graph TD
+    %% Client Layer
+    subgraph Client [Client Layer]
+        A["Android App \n (Jetpack Compose)"]
+        M["Google Maps SDK"]
+        A <--> M
+    end
+
+    %% Cloud/API Layer
+    subgraph Cloud [Cloud Layer - FastAPI]
+        B["API Gateway / Router"]
+
+        subgraph Agents [4-Stage AI Pipeline]
+            C1["1. Ingestion Agent"]
+            C2["2. Trust & Detection"]
+            C3["3. Situation Planning"]
+            C4["4. Execution"]
+            C1 --> C2 --> C3 --> C4
+        end
+
+        B <--> Agents
+    end
+
+    %% Inference Layer
+    subgraph Inference [Inference Layer]
+        D["Gemini 3 Flash \n (Cloud AI)"]
+        E["Ollama API \n (Fallback)"]
+    end
+
+    %% Data/Persistence Layer
+    subgraph Data [Data & Persistence]
+        F[("Firebase Realtime DB")]
+        G[("Cloud Firestore")]
+        H[("Firebase Storage")]
+    end
+
+    %% Connections
+    A <-->|REST / WebSockets| B
+    A <-->|StateFlow Sync| F
+
+    Agents <--> D
+    Agents <--> E
+
+    C4 -->|Update States| F
+    C4 -->|Save Telemetry| G
+    B -->|Multimedia| H

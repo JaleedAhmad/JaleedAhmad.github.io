@@ -1,0 +1,49 @@
+[
+  {
+    "file": "neural-forensics.webp",
+    "source": "https://github.com/JaleedAhmad/ai-image-forensics-app/blob/main/assets/dashboard.png",
+    "width": 1200,
+    "height": 784
+  },
+  {
+    "file": "study-notes.webp",
+    "source": "https://github.com/JaleedAhmad/ai-study-notes-agent/blob/main/assets/file_upload.png",
+    "width": 1200,
+    "height": 675
+  },
+  {
+    "file": "weather-architecture.webp",
+    "source": "https://github.com/JaleedAhmad/weather-chat-dashboard/blob/main/diagrams/api_structure.png",
+    "width": 600,
+    "height": 900
+  },
+  {
+    "file": "sentinel-dashboard.webp",
+    "source": "https://github.com/JaleedAhmad/sentinel/blob/f3a09a78c5a157722098137efcb785af517e599d/dashboard.html",
+    "repository": "https://github.com/JaleedAhmad/sentinel",
+    "kind": "Screenshot of locally rendered repository interface",
+    "capture_date": "2026-11-08",
+    "notes": "Idle dashboard; no attack pipeline run.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 19228,
+    "sha256": "31bb9d2875749c49f6d6c087e9bf61bff3baa7c4ab5390f36968deb147cc60f1",
+    "source_sha256": "b790156008b3b938868bb735aebb69031df5980372d52fbd7c5565155430ca9d"
+  },
+  {
+    "file": "trafficguard-architecture.svg",
+    "source": "https://github.com/JaleedAhmad/hackathon-trafficguard/blob/b78747c5f448dd1858079ee63408a0478693efa9/README.md",
+    "repository": "https://github.com/JaleedAhmad/hackathon-trafficguard",
+    "kind": "Repository Mermaid architecture diagram rendered as SVG",
+    "source_file": "trafficguard-architecture.mmd",
+    "renderer": "Mermaid 11.12.0, dark theme, SVG text labels",
+    "notes": "Original diagram labels and connections preserved; source trailing whitespace normalized. Escaped newline markers rendered as line breaks. This is repository architecture documentation, not a live application state or deployment result.",
+    "width": 1311,
+    "height": 1022,
+    "bytes": 33079,
+    "sha256": "a482107c5658a729954448cbce3e34fb7cc92deefb444ad21f2115c9c55c833c",
+    "source_sha256": "e1d974a63d868e66df4659d96755e03632ae87e276fb0e8c783d0f652945f3d8",
+    "diagram_source_sha256": "3e5a3ad4dec2d3ae933df8f7ecd34bce058f80afe7155febc9cfed8a4b450946",
+    "original_diagram_source_sha256": "390fbf02c17e6621e05931b589fbdeee17826bbee350bcc53a6c74dd09ee6b0b"
+  }
+]

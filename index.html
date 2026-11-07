@@ -4,268 +4,102 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Portfolio of Jaleed Ahmad, an AI/ML Engineer focused on Generative AI, MLOps, and Cloud-Native Infrastructure." name="description"/>
+<meta content="Jaleed Ahmad, AI/ML Engineer and Electrical Engineering graduate. Explore Generative AI, computer vision, embedded systems, and cloud engineering projects." name="description"/>
 <title>Jaleed Ahmad | AI/ML Engineer</title>
 <link href="style.css" rel="stylesheet"/>
 <!-- Font Awesome for social icons -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 </head>
-<body>
+<body id="top">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <!-- Scroll Progress -->
 <div id="scroll-progress"></div>
 <!-- Neural Network Background -->
-<canvas id="neural-canvas"></canvas>
-<nav id="navbar">
+<canvas id="neural-canvas" aria-hidden="true"></canvas>
+<nav id="navbar" aria-label="Primary navigation">
 <div class="container">
-<a class="logo" href="#">JA</a>
-<div class="menu-toggle" id="mobile-menu">
-<i class="fas fa-bars"></i>
-</div>
-<ul class="nav-links">
+<a class="logo" href="#top" aria-label="Jaleed Ahmad — back to top">JA</a>
+<button class="menu-toggle" id="mobile-menu" type="button" aria-label="Open navigation" aria-controls="navigation-links" aria-expanded="false">
+<span aria-hidden="true" class="menu-symbol">☰</span>
+</button>
+<ul class="nav-links" id="navigation-links">
 <li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
 <li><a href="#experience">Experience</a></li>
 <li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </div>
 </nav>
+<main id="main-content" tabindex="-1">
 <header class="hero">
 <div class="hero-content container">
 <h1 class="reveal">Jaleed <span class="gradient-text">Ahmad</span></h1>
-<p class="reveal">AI/ML Engineer focused on Generative AI, MLOps, and Cloud-Native Infrastructure.</p>
+<p class="hero-role reveal">AI/ML Engineer <span aria-hidden="true">|</span> Electrical Engineering Graduate</p>
+<p class="hero-intro reveal">Building intelligent applications through Generative AI, computer vision, and machine learning, with hands-on experience in Linux-based development, embedded systems, and cloud infrastructure.</p>
 <div class="btn-group reveal">
-<a class="btn btn-primary" href="#projects">View Projects</a>
-<a class="btn btn-secondary" href="https://linkedin.com/in/jaleed-ahmad"><i class="fab fa-linkedin"></i> LinkedIn</a>
-<a class="btn btn-secondary" download="" href="jaleed-resume.pdf"><i class="fas fa-file-download"></i> Technical Resume</a>
+<a href="#projects" class="btn btn-primary">View Projects</a>
+<a href="jaleed-resume.pdf" class="btn btn-secondary" download>Download Résumé</a>
+<a href="https://linkedin.com/in/jaleed-ahmad" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 </div>
 </div>
 </header>
 <section class="container" id="about">
-<div class="section-header">
-<h2>Operationalizing AI</h2>
-<div class="line"></div>
-</div>
+<div class="section-header"><h2>About Me</h2><div class="line"></div></div>
 <div class="about-content">
 <div class="about-text">
-<p>I am an AI/ML Engineer dedicated to building intelligent systems that are scalable, reliable, and production-ready. My background in Electrical Engineering from Namal University provides a technical foundation for my work in <strong>Large Language Models (LLMs)</strong> and <strong>MLOps</strong>.</p>
-<p>I architect pipelines that take AI from a research concept to a cloud-deployed reality, ensuring high performance through robust DevOps practices. My focus is on the intersection of Generative AI and the infrastructure required to sustain it at scale.</p>
-<div class="skills-grid">
-<div class="skill-category">
-<h4>Applied AI &amp; ML</h4>
-<ul class="skill-list">
-<li>Python, TensorFlow, OpenCV</li>
-<li>Gemini, Mistral, Groq, Ollama, VertexAI, Prompt Design</li>
-<li>LangChain, RAG, Vector Databases</li>
-</ul>
-<p class="skill-note">Also explored: OpenAI</p>
-</div>
-<div class="skill-category">
-<h4>Full-Stack &amp; Cloud</h4>
-<ul class="skill-list">
-<li>React, Next.js, Node.js</li>
-<li>FastAPI, Flask, Streamlit</li>
-<li>GCP, Supabase, Cloud Run</li>
-</ul>
-</div>
-<div class="skill-category">
-<h4>Infrastructure &amp; Mobile</h4>
-<ul class="skill-list">
-<li>Docker, Kubernetes, CI/CD</li>
-<li>Terraform, GitHub Actions</li>
-<li>Android (Kotlin, Java)</li>
-</ul>
-</div>
-</div>
+<p>I’m an AI/ML Engineer with a BS in Electrical Engineering from Namal University. My work spans Generative AI, computer vision, machine learning, and embedded systems, connecting models with applications, data processing, hardware, and infrastructure.</p>
+<p>At T8 Launchpad, I work with RAG pipelines, Linux-based application environments, Docker, and deployment workflows. My projects range from document assistants and image-analysis applications to sensor-based recognition and Raspberry Pi monitoring.</p>
+<p>Alongside MLOps and cloud engineering, I’m interested in running LLMs locally, Stable Diffusion and diffusion-based image generation, and GPU-accelerated inference. I want to explore model optimization and efficient inference on Linux-based and edge AI systems further. I welcome engineering roles, freelance work, and technical collaborations.</p>
 </div>
 <div class="profile-img-container">
 <div class="profile-img-wrapper">
-<img alt="Jaleed Ahmad" src="Jaleed_photo.png"/>
+<img alt="Jaleed Ahmad" src="Jaleed_photo.webp" width="560" height="560" loading="lazy" decoding="async"/>
 </div>
 </div>
 </div>
 </section>
-<section class="container" id="experience">
-<div class="section-header">
-<h2>Experience</h2>
-<div class="line"></div>
-</div>
-<div class="experience-list">
-<div class="experience-item" style="margin-bottom: 3rem;">
-<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-<h3 style="color: var(--acc-blue);">Trainee AI/ML &amp; DevOps Engineer</h3>
-<span>02/2026 – Present</span>
-</div>
-<h4 style="margin-bottom: 1rem; color: var(--text-secondary);">T8 Launchpad (NASTP Delta) | Lahore, Pakistan</h4>
-<ul class="skill-list">
-<li>Developing cloud-native AI solutions and automating the deployment of machine learning models.</li>
-<li>Architecting RAG pipelines for contextual intelligence in enterprise applications.</li>
-<li>Orchestrating serverless workflows for large-scale AI dataset processing on AWS and GCP.</li>
-</ul>
-</div>
-<div class="experience-item" style="margin-bottom: 3rem;">
-<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-<h3 style="color: var(--acc-blue);">NLP Intern</h3>
-<span>09/2025 – 10/2025</span>
-</div>
-<h4 style="margin-bottom: 1rem; color: var(--text-secondary);">Elevvo | Remote</h4>
-<p style="color: var(--text-secondary);">Refining text-processing workflows and implementing NLP architectures using state-of-the-art transformers.</p>
-</div>
-<div class="experience-item">
-<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-<h3 style="color: var(--acc-blue);">IoT Intern</h3>
-<span>07/2024 – 10/2025</span>
-</div>
-<h4 style="margin-bottom: 1rem; color: var(--text-secondary);">Kun Techs | Faisalabad</h4>
-<p style="color: var(--text-secondary);">Bridging hardware data with AI analysis via cloud-integrated IoT systems and real-time sensor processing.</p>
-</div>
-</div>
-</section>
-<section class="container" id="projects">
-<div class="section-header">
-<h2>Selected Engineering Work</h2>
-<div class="line"></div>
-</div>
-<div class="featured-grid"><div class="project-card">
-<div class="project-icon"><i class="fas fa-crosshairs" style="color: var(--acc-blue);"></i></div>
-<h3>Sentinel — Agentic Red-Teaming Pipeline</h3>
-<ul class="skill-list project-details-list"><li>An automated, multi-agent adversarial testing framework designed to evaluate and harden target AI agents against prompt-injection and tool-misuse vulnerabilities</li><li>Features a Live Web Dashboard, Dynamic Adaptation, HTML Security Reports, and Hybrid LLM Routing</li></ul>
-<div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Agents</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/Sentinel" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-<a aria-label="View Live Project" href="https://sentinel-398081109917.us-central1.run.app/dashboard" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-</div>
-</div><div class="project-card">
-<div class="project-icon"><i class="fas fa-bug" style="color: var(--acc-blue);"></i></div>
-<h3>AgentBreak</h3>
-<ul class="skill-list project-details-list"><li>Workflow-level security scanner for multi-agent AI systems</li><li>AgentBreak understands the graph of tools your agent can call, finds every chain from an untrusted input source to a sensitive action sink, and proves the exploit with a full tool-call trace</li></ul>
-<div class="tags"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">Security</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/Agentbreak" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-</div>
-</div><div class="project-card">
-<div class="project-icon"><i class="fas fa-search-plus" style="color: var(--acc-blue);"></i></div>
-<h3>🕵️ NEURAL FORENSICS V7.0</h3>
-<ul class="skill-list project-details-list"><li>A premium, agentic AI forensic suite designed to interrogate digital imagery for signs of manipulation, generation, and enhancement.</li><li>Utilizes a context-aware, multi-agent reasoning pipeline to provide high-confidence verdicts backed by visual evidence and a transparent reasoning chain.</li></ul>
-<div class="tags"><span class="tag">Python</span><span class="tag">Next.js</span><span class="tag">FastAPI</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/ai-image-forensics-app" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-<a aria-label="View Live Project" href="https://ai-image-forensics-app.vercel.app/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-</div>
-</div></div><div class="project-grid"><div class="project-card">
-<div class="project-icon"><i class="fas fa-brain" style="color: var(--acc-blue);"></i></div>
-<h3>AI Study Notes Agent 📚</h3>
-<ul class="skill-list project-details-list"><li>Leverages a dynamic multi-tier LLM cascade and intelligent document routing to transform how users interact with academic materials</li></ul>
-<div class="tags"><span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">Gemini</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/ai-study-notes-agent" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-<a aria-label="View Live Project" href="https://jaleed02-ai-notes-agent.hf.space/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-</div>
-</div><div class="project-card">
-<div class="project-icon"><i class="fas fa-robot" style="color: var(--acc-blue);"></i></div>
-<h3>🏍️ Blizzup Agentic Bike Dealership</h3>
-<ul class="skill-list project-details-list"><li>Intelligent AI-Driven Vehicle Comparison &amp; Inventory Platform</li></ul>
-<div class="tags"><span class="tag">React</span><span class="tag">Gemini</span><span class="tag">Node.js</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/blizzup-fullstack-assessment" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-<a aria-label="View Live Project" href="https://blizzup-fullstack-assessment.vercel.app/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-</div>
-</div><div class="project-card">
-<div class="project-icon"><i class="fas fa-music" style="color: var(--acc-blue);"></i></div>
-<h3>AuraBeat 🎵</h3>
-<ul class="skill-list project-details-list"><li>Blends real-time sentiment analysis, Open-Meteo local weather data, and a resilient LLM Waterfall system (Gemini + Groq) to curate personalized soundscapes</li></ul>
-<div class="tags"><span class="tag">React</span><span class="tag">Gemini</span><span class="tag">Node.js</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/music-recommender" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-<a aria-label="View Live Project" href="https://music-recommender-rust.vercel.app/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-</div>
-</div><div class="project-card">
-<div class="project-icon"><i class="fas fa-cloud-sun" style="color: var(--acc-blue);"></i></div>
-<h3>Weather &amp; Chat Dashboard 🌦️</h3>
-<ul class="skill-list project-details-list"><li>Integrates a live DHT11 sensor with an interactive Mistral AI chat interface for real-time IoT hardware telemetry on Raspberry Pi</li></ul>
-<div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/weather-chat-dashboard" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-</div>
-</div><div class="project-card">
-<div class="project-icon"><i class="fas fa-shield-alt" style="color: var(--acc-green);"></i></div>
-<h3>TrafficGuard AI 🛡️</h3>
-<ul class="skill-list project-details-list"><li>Detects, simulates, and mitigates severe urban mobility disruptions like flash flooding and traffic blockages using an AI-driven crisis intelligence platform</li></ul>
-<div class="tags"><span class="tag">Python</span><span class="tag">React</span><span class="tag">FastAPI</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/hackathon-trafficguard" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-<a aria-label="View Live Project" href="https://trafficguard-frontend-289218709697.asia-south1.run.app/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-</div>
-</div><div class="project-card">
-<div class="project-icon"><i class="fas fa-eye" style="color: var(--acc-green);"></i></div>
-<h3>👁️ Fundus Vessel Segmentation</h3>
-<ul class="skill-list project-details-list"><li>Segments retinal blood vessels from fundus images using a specialized U-Net deep learning architecture trained on the DRIVE dataset</li></ul>
-<div class="tags"><span class="tag">Python</span><span class="tag">TensorFlow</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/fundus-vessel-segmentation" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-</div>
-</div><div class="project-card">
-<div class="project-icon"><i class="fas fa-smile" style="color: var(--acc-green);"></i></div>
-<h3>🎶 Emotion-Based Music Player</h3>
-<ul class="skill-list project-details-list"><li>Utilizes a deep learning model for real-time facial sentiment analysis to dynamically source and play matching music from YouTube or Spotify</li></ul>
-<div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">TensorFlow</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/EmotionMusicPlayer" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-</div>
-</div><div class="project-card">
-<div class="project-icon"><i class="fas fa-camera" style="color: var(--acc-green);"></i></div>
-<h3>🤖 Robot Vision &amp; Computer Vision Toolkit</h3>
-<ul class="skill-list project-details-list"><li>Executes 3D pose estimation for ArUco markers and dynamic geometric shape detection using HSV color-space masking</li></ul>
-<div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/robot-vision-cv" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-</div>
-</div><div class="project-card">
-<div class="project-icon"><i class="fas fa-gamepad" style="color: var(--text-primary);"></i></div>
-<h3>Modern Tic-Tac-Toe Android App</h3>
-<ul class="skill-list project-details-list"><li>A sleek Android application featuring a 'Midnight Tech' glassmorphism aesthetic, smooth animations, and modern development practices</li></ul>
-<div class="tags"><span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">Java</span></div>
-<div class="project-links">
-<a aria-label="View Source on GitHub" href="https://github.com/JaleedAhmad/tictactoe-app" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
-</div>
-</div></div>
-</section>
-<section class="container" id="contact" style="text-align: center;">
-<div class="section-header">
-<h2>Contact</h2>
-<div class="line"></div>
-</div>
-<p style="margin-bottom: 2rem; color: var(--text-secondary); max-width: 600px; margin-inline: auto;">Open to collaborating on groundbreaking AI research and intelligent system development.</p>
-<a class="btn btn-primary" href="mailto:jaleedahmad12@gmail.com">Connect with Me</a>
-</section>
-<section class="container" id="certifications">
-<div class="section-header">
-<h2>Certifications &amp; Credentials</h2>
-<div class="line"></div>
-</div>
-<div class="project-grid">
-<div class="project-card" style="min-height: auto;">
-<h3 style="font-size: 1.1rem; color: var(--acc-blue);">Google Cloud Professional Sprint</h3>
-<ul class="skill-list" style="font-size: 0.85rem;">
-<li>Engineer AI Agents with ADK</li>
-<li>Develop GenAI Apps with Gemini and Streamlit</li>
-<li>Prompt Design in Vertex AI</li>
-<li>Explore Generative AI with Vertex AI API</li>
-<li>Infrastructure Modernization on GCP</li>
-</ul>
-</div>
-<div class="project-card" style="min-height: auto;">
-<h3 style="font-size: 1.1rem; color: var(--acc-blue);">Academic Foundation</h3>
-<p style="margin-bottom: 0;">BS Electrical Engineering<br/>Namal University</p>
-<a href="https://www.credly.com/users/jaleed-ahmad/skills" style="color: var(--acc-green); text-decoration: none; font-size: 0.8rem; margin-top: 1rem; display: inline-block;" target="_blank">View Credly Profile →</a>
-</div>
-</div>
-</section>
+<section class="container" id="skills"><div class="section-header"><h2>Technical Skills</h2><div class="line"></div></div><p class="section-intro">Technologies used across engineering work, academic projects, and application development. Exploratory work and protocol exposure are identified separately.</p><div class="skills-grid"><div class="skill-category"><h3>AI, Machine Learning &amp; Computer Vision</h3><ul class="skill-list"><li>Python, NumPy, scikit-learn, OpenCV</li><li>PyTorch, TensorFlow/Keras; CNNs, image processing, segmentation</li></ul><p class="skill-note">Academic exploration: LSTMs for sensor-sequence recognition.</p></div><div class="skill-category"><h3>Generative AI &amp; Agentic Systems</h3><ul class="skill-list"><li>LLM applications, RAG, embeddings, vector databases</li><li>LangChain, LangGraph, ChromaDB</li><li>Gemini, Google ADK, MCP/FastMCP; agent orchestration and tool-use evaluation</li></ul><p class="skill-note">Exploratory familiarity: Ollama for local LLMs; Stable Diffusion for image generation.</p></div><div class="skill-category"><h3>Cloud, DevOps &amp; MLOps</h3><ul class="skill-list"><li>Linux, Docker, GitHub Actions, CI/CD</li><li>AWS ECS Fargate and Jenkins in trainee engineering work</li><li>GCP Cloud Run; container build and deployment configuration</li></ul></div><div class="skill-category"><h3>Embedded Systems &amp; Software Development</h3><ul class="skill-list"><li>Raspberry Pi, ESP32, MPU6050 sensors; sensor integration and Wi-Fi telemetry</li><li>Python, FastAPI, Flask, Streamlit; React/Next.js, JavaScript/TypeScript</li><li>Supporting development: Arduino, C/C++; Android (Kotlin, Java)</li></ul><p class="skill-note">Protocol exposure: Bluetooth and LoRaWAN.</p></div></div></section>
+<section class="container" id="experience"><div class="section-header"><h2>Experience</h2><div class="line"></div></div><div class="experience-list"><article class="experience-item"><div class="experience-heading"><h3 class="accent-blue">Trainee AI/ML &amp; DevOps Engineer</h3><span>February 2026 – Present</span></div><h4 class="experience-company">T8 Launchpad (NASTP Delta) | Lahore, Pakistan</h4><ul class="skill-list"><li>Develop RAG pipelines that retrieve relevant information for LLM application workflows.</li><li>Work with Linux-based application environments, Docker, and AWS ECS Fargate deployment workflows to support AI/ML and computer-vision applications.</li><li>Contribute to CI/CD workflows using GitHub Actions and Jenkins as part of trainee engineering work.</li></ul></article><article class="experience-item"><div class="experience-heading"><h3 class="accent-blue">NLP Intern</h3><span>September 2025 – October 2025</span></div><h4 class="experience-company">Elevvo | Remote</h4><ul class="skill-list"><li>Completed six documented NLP projects: sentiment analysis, news classification, fake-news detection, topic modelling, question answering, and text summarisation.</li><li>Applied text preprocessing, TF-IDF features, classical ML, and transformer-based techniques using Python, scikit-learn, NLTK, spaCy, and Hugging Face Transformers.</li></ul></article><article class="experience-item"><div class="experience-heading"><h3 class="accent-blue">IoT Intern</h3><span>July 2024 – October 2025</span></div><h4 class="experience-company">Kun Techs | Faisalabad</h4><ul class="skill-list"><li>Worked on ESP32-based IoT development, sensor integration, and monitoring through web interfaces.</li><li>Used Wi-Fi for sensor-data transmission and gained exposure to Bluetooth and LoRaWAN communication protocols.</li></ul></article></div></section>
+<section class="container" id="projects"><div class="section-header"><h2>Featured Projects</h2><div class="line"></div></div><p class="section-intro">Selected work across AI applications, agent evaluation, sensor-based machine learning, and cloud deployment workflows.</p><div class="featured-grid"><article class="project-card" id="neural-forensics">
+<figure class="project-visual"><a href="assets/projects/neural-forensics.webp" aria-label="View image — Neural Forensics"><img src="assets/projects/neural-forensics.webp" alt="Neural Forensics V6 interface with image upload and analysis panels" width="1200" height="784" loading="lazy" decoding="async"></a><figcaption>Repository screenshot · V6 interface</figcaption></figure><div class="project-heading"><p class="project-type">Image analysis</p><h3>Neural Forensics</h3></div><p class="project-overview">An image-analysis application combining AI agents with metadata and image-processing views to investigate possible generation or manipulation.</p><ul class="skill-list project-details-list"><li>Scene profiling, parallel vision analysis, and an arbitration stage produce a structured assessment.</li><li>Visual evidence inspection, streamed progress, PDF reports, and case archives.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Next.js</span><span class="tag">Gemini / Groq</span></div><div class="project-actions"><div class="project-links"><a href="https://github.com/JaleedAhmad/ai-image-forensics-app" target="_blank" rel="noopener noreferrer" aria-label="Code — Neural Forensics">Code</a><a href="https://ai-image-forensics-app.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live demo — Neural Forensics">Live demo</a></div></div></article>
+<article class="project-card" id="sentinel">
+<figure class="project-visual"><a href="assets/projects/sentinel-dashboard.webp" aria-label="View full screenshot — Sentinel"><img src="assets/projects/sentinel-dashboard.webp" alt="Sentinel dashboard showing its attacker, target, and judge diagram in an idle state" width="1280" height="720" loading="lazy" decoding="async"></a><figcaption>Local capture · Idle dashboard</figcaption></figure><div class="project-heading"><p class="project-type">Agent security · Proof of concept</p><h3>Sentinel</h3></div><p class="project-overview">An experimental multi-agent red-teaming framework for examining prompt injection and tool misuse in a controlled target-agent environment.</p><ul class="skill-list project-details-list"><li>Coordinates attacker, target, and judge agents, recording attempted attacks and tool calls.</li><li>Includes configuration comparisons, an event-streaming dashboard, HTML reports, and Cloud Run deployment configuration.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">Google ADK</span><span class="tag">FastMCP</span><span class="tag">FastAPI</span></div><div class="project-actions"><div class="project-links"><a href="https://github.com/JaleedAhmad/Sentinel" target="_blank" rel="noopener noreferrer" aria-label="Code — Sentinel">Code</a></div></div></article>
+<article class="project-card" id="study-notes">
+<figure class="project-visual"><a href="assets/projects/study-notes.webp" aria-label="View image — AI Study Notes Agent"><img src="assets/projects/study-notes.webp" alt="AI Study Notes Agent document-upload interface and saved chat history" width="1200" height="675" loading="lazy" decoding="async"></a><figcaption>Repository screenshot · Study UI</figcaption></figure><div class="project-heading"><p class="project-type">Document applications</p><h3>AI Study Notes Agent</h3></div><p class="project-overview">A document-based study assistant that generates notes and study materials, retrieves relevant passages, and saves user sessions.</p><ul class="skill-list project-details-list"><li>Text extraction, chunking, Gemini embeddings, and ChromaDB retrieval.</li><li>Provider fallback, GitHub OAuth, Supabase-backed sessions, and Anki export.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">LangChain</span><span class="tag">ChromaDB</span><span class="tag">Supabase</span></div><div class="project-actions"><div class="project-links"><a href="https://github.com/JaleedAhmad/ai-study-notes-agent" target="_blank" rel="noopener noreferrer" aria-label="Code — AI Study Notes Agent">Code</a><a href="https://jaleed02-ai-notes-agent.hf.space/" target="_blank" rel="noopener noreferrer" aria-label="Live demo — AI Study Notes Agent">Live demo</a></div></div></article>
+<article class="project-card" id="asl-recognition">
+<div class="project-visual project-placeholder"><div class="project-symbol" aria-hidden="true"><i class="fas fa-hand-paper"></i><span>Sensor-based machine learning</span></div><span class="media-caption">Academic project · Technical placeholder</span></div><div class="project-heading"><p class="project-type">Academic engineering · Final Year Project</p><h3>ASL Recognition using Accelerometers and Deep Learning</h3></div><p class="project-overview">A sensor-based recognition system developed as my Electrical Engineering final-year project, connecting motion-data processing with deep learning.</p><ul class="skill-list project-details-list"><li>Five MPU6050 sensors, one per finger, provide data for processing and feature extraction.</li><li>CNN-based recognition uses transformed sensor data; LSTM approaches were explored for comparison.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">MPU6050</span><span class="tag">CNN</span><span class="tag">LSTM exploration</span></div><div class="project-actions"><details class="academic-details"><summary>Project details</summary><p>The project uses transformed finger-motion sensor data for CNN-based recognition, with LSTMs explored for comparison. Jetson Nano was identified as the edge deployment target.</p></details></div></article>
+<article class="project-card" id="weather-dashboard">
+<figure class="project-visual project-visual-diagram"><a href="assets/projects/weather-architecture.webp" aria-label="View image — Weather &amp; Chat Dashboard"><img src="assets/projects/weather-architecture.webp" alt="Repository diagram of Raspberry Pi sensor context and Mistral API interaction" width="600" height="900" loading="lazy" decoding="async"></a><figcaption>Repository diagram · API architecture</figcaption></figure><div class="project-heading"><p class="project-type">Sensor-connected applications</p><h3>Weather &amp; Chat Dashboard</h3></div><p class="project-overview">A Raspberry Pi dashboard displaying DHT11 temperature and humidity readings alongside an AI chat interface using the latest sensor data.</p><ul class="skill-list project-details-list"><li>Background GPIO sampling and Flask endpoints supply recent readings to the web dashboard.</li><li>Mistral requests include current measurements as context; inference runs through the cloud API.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">Raspberry Pi</span><span class="tag">DHT11</span><span class="tag">Flask</span><span class="tag">JavaScript</span></div><div class="project-actions"><div class="project-links"><a href="https://github.com/JaleedAhmad/weather-chat-dashboard" target="_blank" rel="noopener noreferrer" aria-label="Code — Weather &amp; Chat Dashboard">Code</a></div></div></article>
+<article class="project-card" id="trafficguard">
+<figure class="project-visual project-visual-diagram"><a href="assets/projects/trafficguard-architecture.svg" aria-label="View full architecture diagram — TrafficGuard AI"><img src="assets/projects/trafficguard-architecture.svg" alt="TrafficGuard repository architecture showing the client, FastAPI agent pipeline, inference, and Firebase data layers" width="1311" height="1022" loading="lazy" decoding="async"></a><figcaption>Repository diagram · System architecture</figcaption></figure><div class="project-heading"><p class="project-type">Hackathon prototype</p><h3>TrafficGuard AI</h3></div><p class="project-overview">A hackathon prototype for processing urban-disruption reports and demonstrating AI-assisted incident analysis and response planning.</p><ul class="skill-list project-details-list"><li>A staged FastAPI pipeline handles ingestion, assessment, planning, and response generation.</li><li>Includes simulated weather and traffic inputs, plus container build and Cloud Run deployment configuration.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">Firebase</span><span class="tag">GCP Cloud Run</span></div><div class="project-actions"><div class="project-links"><a href="https://github.com/JaleedAhmad/hackathon-trafficguard" target="_blank" rel="noopener noreferrer" aria-label="Code — TrafficGuard AI">Code</a></div></div></article>
+</div></section>
+<section class="container" id="more-projects"><div class="section-header"><h2>More Projects</h2><div class="line"></div></div><div class="project-grid compact-projects"><article class="project-card">
+<h3>AgentBreak</h3><p class="project-overview">Examines potential prompt-injection paths through agent tool graphs, with mock and LLM-simulated execution traces for review.</p><div class="tags"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">Security</span></div><div class="project-links"><a href="https://github.com/JaleedAhmad/Agentbreak" target="_blank" rel="noopener noreferrer" aria-label="Code — AgentBreak">Code</a></div></article>
+<article class="project-card">
+<h3>Fundus Vessel Segmentation</h3><p class="project-overview">A Flask inference interface that preprocesses retinal images and displays model-predicted vessel masks and overlays.</p><div class="tags"><span class="tag">Python</span><span class="tag">TensorFlow/Keras</span><span class="tag">Flask</span></div><div class="project-links"><a href="https://github.com/JaleedAhmad/fundus-vessel-segmentation" target="_blank" rel="noopener noreferrer" aria-label="Code — Fundus Vessel Segmentation">Code</a></div></article>
+<article class="project-card">
+<h3>AuraBeat</h3><p class="project-overview">A music-recommendation application combining mood input, weather context, and LLM-generated suggestions.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Gemini / Groq</span></div><div class="project-links"><a href="https://github.com/JaleedAhmad/music-recommender" target="_blank" rel="noopener noreferrer" aria-label="Code — AuraBeat">Code</a><a href="https://music-recommender-rust.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live demo — AuraBeat">Live demo</a></div></article>
+<article class="project-card">
+<h3>Robot Vision &amp; Computer Vision Toolkit</h3><p class="project-overview">OpenCV demonstrations of ArUco-marker 3D pose estimation and geometric-shape detection using HSV masking.</p><div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span></div><div class="project-links"><a href="https://github.com/JaleedAhmad/robot-vision-cv" target="_blank" rel="noopener noreferrer" aria-label="Code — Robot Vision &amp; Computer Vision Toolkit">Code</a></div></article>
+<article class="project-card">
+<h3>Blizzup Bike Dealership</h3><p class="project-overview">A vehicle-comparison and inventory web application with Gemini integration.</p><div class="tags"><span class="tag">React</span><span class="tag">Gemini</span><span class="tag">Node.js</span></div><div class="project-links"><a href="https://github.com/JaleedAhmad/blizzup-fullstack-assessment" target="_blank" rel="noopener noreferrer" aria-label="Code — Blizzup Bike Dealership">Code</a><a href="https://blizzup-fullstack-assessment.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live demo — Blizzup Bike Dealership">Live demo</a></div></article>
+<article class="project-card">
+<h3>Emotion-Based Music Player</h3><p class="project-overview">A computer-vision project connecting facial-expression classification with music selection.</p><div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">TensorFlow</span></div><div class="project-links"><a href="https://github.com/JaleedAhmad/EmotionMusicPlayer" target="_blank" rel="noopener noreferrer" aria-label="Code — Emotion-Based Music Player">Code</a></div></article>
+<article class="project-card">
+<h3>Modern Tic-Tac-Toe Android App</h3><p class="project-overview">An Android game demonstrating mobile interface development, animations, and interaction design.</p><div class="tags"><span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">Java</span></div><div class="project-links"><a href="https://github.com/JaleedAhmad/tictactoe-app" target="_blank" rel="noopener noreferrer" aria-label="Code — Modern Tic-Tac-Toe Android App">Code</a></div></article>
+</div></section>
+<section class="container" id="education"><div class="section-header"><h2>Education</h2><div class="line"></div></div><article class="education-card"><h3>BS Electrical Engineering</h3><p class="education-institution">Namal University · Mianwali, Pakistan</p><p>Final Year Project: <a href="#asl-recognition">ASL Recognition using Accelerometers and Deep Learning</a></p></article></section>
+<section class="container" id="certifications"><div class="section-header"><h2>Certifications &amp; Courses</h2><div class="line"></div></div><div class="credentials-grid"><div class="credential-group"><h3>Professional Certifications</h3><ul class="credential-list"><li><span>Oracle Cloud Infrastructure AI Foundations Associate</span><span class="credential-year">2025</span></li></ul></div><div class="credential-group"><h3>Courses and Skill Badges</h3><h4>Google Cloud · 2026</h4><ul class="skill-list credential-list"><li>Engineer AI Agents with ADK</li><li>Develop GenAI Apps with Gemini and Streamlit</li><li>Prompt Design in Vertex AI</li><li>Explore Generative AI with Vertex AI API</li><li>Infrastructure Modernization on GCP</li></ul><h4>Additional training · 2025</h4><ul class="skill-list credential-list"><li>LangChain for LLM Application Development</li><li>Understanding and Applying Text Embeddings</li><li>ChatGPT Prompt Engineering for Developers</li><li>Getting Started with Mistral</li></ul></div></div><a href="https://www.credly.com/users/jaleed-ahmad/skills" class="credential-link" target="_blank" rel="noopener noreferrer">View Credly profile</a></section>
+<section class="container contact-section" id="contact"><div class="section-header"><h2>Let’s Connect</h2><div class="line"></div></div><p class="contact-intro">I’m interested in AI/ML engineering roles, freelance development projects, and technical collaborations. If you’re working on Generative AI, computer vision, embedded systems, or deployment workflows, I’d be glad to discuss how I could contribute.</p><p class="contact-location">Faisalabad, Pakistan</p><div class="btn-group"><a href="mailto:jaleedahmad12@gmail.com" class="btn btn-primary">jaleedahmad12@gmail.com</a><a href="https://linkedin.com/in/jaleed-ahmad" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/JaleedAhmad" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a><a href="jaleed-resume.pdf" class="btn btn-secondary" download>Download Résumé</a></div><div class="secondary-links"><a href="https://www.kaggle.com/jaleedahmad02" target="_blank" rel="noopener noreferrer">Kaggle</a><a href="https://www.credly.com/users/jaleed-ahmad/skills" target="_blank" rel="noopener noreferrer">Credly</a></div></section>
+</main>
 <footer>
 <div class="container">
 <div class="social-links">
-<a aria-label="GitHub Profile" href="https://github.com/JaleedAhmad"><i class="fab fa-github"></i></a>
-<a aria-label="LinkedIn Profile" href="https://linkedin.com/in/jaleed-ahmad"><i class="fab fa-linkedin"></i></a>
-<a aria-label="Kaggle Profile" href="https://www.kaggle.com/jaleedahmad02"><i class="fab fa-kaggle"></i></a>
+<a aria-label="GitHub Profile" href="https://github.com/JaleedAhmad"><i aria-hidden="true" class="fab fa-github"></i></a>
+<a aria-label="LinkedIn Profile" href="https://linkedin.com/in/jaleed-ahmad"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
+<a aria-label="Kaggle Profile" href="https://www.kaggle.com/jaleedahmad02"><i aria-hidden="true" class="fab fa-kaggle"></i></a>
 </div>
 <p>© 2026 Jaleed Ahmad. Innovating at the intersection of AI and Infrastructure.</p>
 </div>
