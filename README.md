@@ -244,4 +244,4 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open `http://127.0.0.1:8000` in a browser.
 
-Project images are sourced from their respective repositories. See [image sources](assets/projects/sources.json) for provenance. The Neural Forensics screenshot shows the older V6 interface; the Weather image is an architecture diagram, not a runtime screenshot.
+Project images are sourced from their respective repositories. See [image sources](assets/projects/sources.json) for source URLs and capture notes. Neural Forensics shows the older V6 interface; Weather uses an architecture diagram. Sentinel is a local capture of the idle dashboard. TrafficGuard uses the system architecture diagram rendered from its repository Mermaid source; it documents the design rather than proving a live deployment. ASL retains a technical placeholder because no authentic project image is available in the accessible materials.

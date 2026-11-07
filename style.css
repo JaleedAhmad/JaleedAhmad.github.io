@@ -6,7 +6,7 @@
     --acc-blue: #00d2ff;
     --acc-green: #00ff9f;
     --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
+    --text-secondary: #b0b8c3;
     --glass-bg: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.1);
     --bg-gradient: radial-gradient(circle at 50% 50%, #112240 0%, #050505 100%);
@@ -46,7 +46,7 @@ h1, h2, h3 {
 }
 
 section.container {
-    padding-block: clamp(3.5rem, 7vw, 6.25rem);
+    padding-block: clamp(3rem, 6vw, 5rem);
 }
 
 section.container + section.container {
@@ -187,7 +187,7 @@ nav .container {
 /* --- Section headers --- */
 
 .section-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2.25rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -207,9 +207,8 @@ nav .container {
 
 .featured-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
 }
 
 .project-grid {
@@ -565,7 +564,6 @@ a:focus-visible, button:focus-visible, [tabindex="-1"]:focus-visible {
     .about-content { gap: 2rem; }
 }
 @media (max-width: 768px) {
-    .featured-grid { grid-template-columns: minmax(0, 1fr); }
     .experience-heading { flex-direction: column; gap: 0.25rem; }
     .about-content { gap: 3rem; }
     .skill-list { text-align: left; }
@@ -596,32 +594,72 @@ a:focus-visible, button:focus-visible, [tabindex="-1"]:focus-visible {
     margin-bottom: 1rem;
 }
 .hero .hero-intro { max-width: 710px; text-wrap: pretty; }
-.section-intro { max-width: 740px; color: var(--text-secondary); margin: -1.25rem 0 2.5rem; }
+.section-intro { max-width: 740px; color: var(--text-secondary); margin: -0.75rem 0 2rem; }
 #skills .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 0; }
 #skills .skill-category { padding: 1.5rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; min-width: 0; }
 #skills .skill-category h3 { font-size: 0.9rem; line-height: 1.6; }
 .experience-list { display: grid; gap: 2.5rem; }
 .experience-item + .experience-item { padding-top: 2.5rem; border-top: 1px solid var(--glass-border); }
+/* Shared media geometry reserves space before lazy images load. */
 .project-visual {
-    height: 180px;
-    margin: -1.5rem -1.5rem 1.25rem;
+    margin: 0 0 1rem;
     overflow: hidden;
     border-radius: 11px 11px 0 0;
     border-bottom: 1px solid var(--glass-border);
     background: var(--surface-color);
     flex-shrink: 0;
 }
-.project-visual a { display: block; height: 150px; }
+.project-visual a, .project-placeholder .project-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    overflow: hidden;
+}
+.project-visual a:focus-visible { outline-offset: -3px; border-radius: 10px 10px 0 0; }
 .project-visual img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.project-visual figcaption { height: 30px; padding: 0.25rem 0.75rem; font-size: 0.7rem; color: var(--text-secondary); }
-.project-symbol { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; padding: 1rem; text-align: center; background: radial-gradient(ellipse at center, rgba(0, 210, 255, 0.09), transparent); }
+.project-visual-diagram img { padding: 0.5rem; }
+.project-visual figcaption, .media-caption {
+    display: flex;
+    align-items: center;
+    min-height: 2.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    background: rgba(5, 5, 5, 0.45);
+    border-top: 1px solid var(--glass-border);
+}
+.project-symbol { flex-direction: column; gap: 0.75rem; padding: 1rem; text-align: center; background: radial-gradient(ellipse at center, rgba(0, 210, 255, 0.09), transparent); }
 .project-symbol i { font-size: 2.5rem; color: var(--acc-blue); }
-.project-symbol span { color: var(--text-secondary); font-size: 0.75rem; }
-.project-card .project-type { flex-grow: 0; font-size: 0.72rem; color: var(--acc-blue); margin-bottom: 0.5rem; }
-.project-card .project-overview { flex-grow: 0; margin-bottom: 1rem; }
-.featured-grid .project-details-list { padding-left: 0; }
-.project-card .project-links { padding-top: 1rem; margin-top: auto; }
-.project-card .tags { margin-bottom: 0.5rem; }
+.project-symbol span { color: var(--text-secondary); font-size: 0.8rem; }
+.featured-grid .project-card { padding: 0; }
+.project-heading, .featured-grid .project-overview, .featured-grid .project-details-list,
+.featured-grid .tags, .project-actions { margin-inline: 1.5rem; }
+.project-card .project-type { flex-grow: 0; font-size: 0.75rem; line-height: 1.5; color: var(--acc-blue); margin-bottom: 0.5rem; }
+.project-heading h3 { line-height: 1.3; margin-bottom: 0; text-wrap: balance; }
+.project-card .project-overview { flex-grow: 0; margin-block: 0.75rem 1rem; }
+.featured-grid .project-details-list { padding-left: 0; margin-bottom: 1rem; }
+.featured-grid .tags { margin-bottom: 0.75rem; }
+.project-actions { margin-top: auto; margin-bottom: 1.25rem; }
+.project-actions .project-links { padding-top: 0; margin-top: 0; }
+.project-actions a, .compact-projects .project-links a {
+    border: 1px solid var(--glass-border);
+    border-radius: 5px;
+    padding-inline: 0.75rem;
+    color: var(--text-primary);
+    background: var(--glass-bg);
+}
+.project-actions a:hover, .compact-projects .project-links a:hover { border-color: var(--acc-blue); color: var(--acc-blue); }
+.project-actions .academic-details { margin-top: 0; }
+/* Align corresponding content rows without fixed heights or clipped text. */
+@supports (grid-template-rows: subgrid) {
+    .featured-grid > .project-card { display: grid; grid-template-rows: subgrid; grid-row: span 6; row-gap: 0; }
+    .featured-grid .project-overview, .featured-grid .project-details-list { align-self: start; flex-grow: 0; }
+    .featured-grid .tags { align-self: start; }
+    .project-actions { align-self: end; }
+}
 .compact-projects .project-overview { flex-grow: 1; }
 .compact-projects h3 { font-size: 1.15rem; }
 .academic-details { margin-top: 1rem; font-size: 0.85rem; color: var(--text-secondary); }
@@ -644,6 +682,13 @@ summary:focus-visible { outline: 2px solid var(--acc-green); outline-offset: 5px
 .secondary-links a { color: var(--text-secondary); min-height: 44px; display: inline-flex; align-items: center; text-underline-offset: 4px; }
 @media (max-width: 600px) {
     #skills .skills-grid, .credentials-grid { grid-template-columns: minmax(0, 1fr); }
-    .project-visual { height: 190px; }
-    .project-visual a { height: 160px; }
+}
+
+/* A single card column keeps the smallest viewports comfortable. */
+@media (max-width: 700px) {
+    .featured-grid { grid-template-columns: minmax(0, 1fr); }
+    .featured-grid > .project-card { display: flex; grid-row: auto; }
+    .project-actions { align-self: stretch; }
+    .project-heading, .featured-grid .project-overview, .featured-grid .project-details-list,
+    .featured-grid .tags, .project-actions { margin-inline: 1.25rem; }
 }
