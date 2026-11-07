@@ -539,6 +539,7 @@ footer p {
 .experience-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 0.5rem; }
 .experience-heading span { flex-shrink: 0; color: var(--text-secondary); }
 .experience-company { margin-bottom: 1rem; }
+.experience-company a { color: inherit; text-underline-offset: 3px; }
 .contact-section { text-align: center; }
 .contact-intro { margin: 0 auto 2rem; color: var(--text-secondary); max-width: 600px; }
 .project-card .credential-title { font-size: 1.1rem; color: var(--acc-blue); }

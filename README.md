@@ -49,6 +49,14 @@ Protocol exposure: Bluetooth and LoRaWAN.
 
 ## Experience
 
+### Junior Automation Engineer
+
+[FlowVeo](https://flowveo.com/) | Faisalabad, Pakistan · July 2026 – Present
+
+- Develop API-connected automation workflows using Make.com, webhooks, Airtable, and third-party integrations.
+- Implement conditional routing, duplicate checks, structured record updates, and order-processing logic.
+- Test API requests, transform webhook payloads, troubleshoot integrations, and support client automation projects.
+
 ### Trainee AI/ML & DevOps Engineer
 
 T8 Launchpad (NASTP Delta) | Lahore, Pakistan · February 2026 – Present
